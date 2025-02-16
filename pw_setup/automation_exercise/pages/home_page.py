@@ -11,9 +11,10 @@ class HomePage(BasePage):
         self.contact_us_button = "//a[contains(text(),'Contact')]"
 
     def validate_title(self,expected_title):
-        self.expected_title = expected_title
+        #self.expected_title = expected_title
         actual_title = self.page.title()  # ✅ Call the method correctly
-        assert actual_title == self.expected_title, f"Expected '{self.expected_title}', but got '{actual_title}'"
+        assert actual_title == expected_title, f"Expected '{self.expected_title}', but got '{actual_title}'"
 
-    def signup_login_button(self):
-        self.page.click(self.signup_login_button)    
+    def click_signup_login(self):
+        self.page.locator(self.signup_login_button).click() 
+
