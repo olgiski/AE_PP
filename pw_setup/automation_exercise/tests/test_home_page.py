@@ -6,4 +6,4 @@ def test_home_page(page):
     homepage = HomePage(page)
     homepage.visit(config.BASE_URL)
     homepage.validate_title("Automation Exercise")
-    homepage.signup_login_button
+    homepage.signup_login_button()

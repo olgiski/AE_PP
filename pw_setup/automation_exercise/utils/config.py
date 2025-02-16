@@ -1,3 +1,4 @@
-BASE_URL = "https://www.automationexercise.com/"
+# config.py
+BASE_URL = "https://automationexercise.com"
 username = "OlgaTest"
-password = "hellotest@test.com"
+email = "hellotest@test.com"
